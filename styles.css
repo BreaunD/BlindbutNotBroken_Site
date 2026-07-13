@@ -152,14 +152,10 @@ a { color: inherit; }
   font-size: var(--step-1); line-height: 1.05;
 }
 .brand__mark {
-  width: 34px; height: 34px; flex: none;
-  display: grid; place-items: center;
+  width: 100px; height: 100px; flex: none;
   border-radius: 50%;
-  background:
-    radial-gradient(circle at 50% 45%, var(--gold-300), var(--gold-500) 55%, var(--navy-700) 56%);
-  box-shadow: 0 0 0 2px var(--navy-600);
+  object-fit: cover;
 }
-.brand__mark span { font-size: 0; }
 .brand small {
   display: block; font-family: var(--font-body);
   font-weight: 600; font-size: 0.6rem; letter-spacing: 0.18em;
