@@ -25,3 +25,53 @@
     if (e.target.closest('a')) closeMenu();
   });
 })();
+
+
+(function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+ 
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+ 
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var reason = document.getElementById('reason').value;
+    var message = document.getElementById('message').value;
+ 
+    var subject = encodeURIComponent('Contact form: ' + (reason || 'General inquiry'));
+    var body = encodeURIComponent(
+      'Name: ' + name + '\nEmail: ' + email + '\n\n' + message
+    );
+ 
+    window.location.href =
+      'mailto:info@blindbutnotbroken.org?subject=' + subject + '&body=' + body;
+  });
+})();
+ 
+/* Contact form -> mailto.
+   Fires window.location.href synchronously inside the click handler,
+   which is required for Safari to allow the mailto composer to open
+   (it blocks mailto navigation that isn't a direct, synchronous
+   result of a user click). Do not wrap this in fetch/async/setTimeout. */
+
+function sendMail() {
+  var nameEl = document.getElementById('name');
+  var emailEl = document.getElementById('email');
+  var reasonEl = document.getElementById('reason');
+  var messageEl = document.getElementById('message');
+  if (!nameEl || !emailEl || !messageEl) return;
+ 
+  var name = nameEl.value;
+  var email = emailEl.value;
+  var reason = reasonEl ? reasonEl.value : '';
+  var message = messageEl.value;
+ 
+  var subject = encodeURIComponent('Contact form: ' + (reason || 'General inquiry'));
+  var body = encodeURIComponent(
+    'Name: ' + name + '\nEmail: ' + email + '\n\n' + message
+  );
+ 
+  window.location.href = 'mailto:info@blindbutnotbroken.org?subject=' + subject + '&body=' + body;
+}
+ 
