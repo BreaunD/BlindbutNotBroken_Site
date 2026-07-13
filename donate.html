@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate — Blind But Not Broken</title>
+  <meta name="description" content="Support blind and visually impaired individuals in the Dayton region. Scan our QR code to give securely. Donations are tax-deductible.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header on-dark">
+    <div class="wrap">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"><span>logo</span></span>
+          <span>Blind But Not Broken<small>Dayton, Ohio</small></span>
+        </a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span aria-hidden="true">☰</span> Menu
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="donate.html" aria-current="page">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero on-dark" aria-labelledby="donate-title">
+      <div class="wrap">
+        <p class="eyebrow">Support Our Mission</p>
+        <h1 id="donate-title">Give in seconds. Scan to donate.</h1>
+        <p class="lede">Your charitable contribution helps us continue advocating for blind,
+          visually impaired, and disabled individuals throughout our communities — funding
+          resources, outreach, accessibility awareness, and support programs.</p>
+      </div>
+    </section>
+
+    <!-- QR donation panel -->
+    <section class="section section--deep" aria-labelledby="qr-title">
+      <div class="wrap">
+        <h2 id="qr-title" class="sr-only">Donate by QR code</h2>
+        <div class="qr-panel">
+          <!--
+            ============================================================
+            SWAP THE QR CODE HERE
+            1. Generate a QR at goqr.me (or similar) pointing to the
+               nonprofit's donation destination.
+            2. Save it as qr-donate.png in this folder.
+            3. Replace the placeholder <div> below with:
+               <img src="qr-donate.png"
+                    alt="QR code to donate to Blind But Not Broken">
+            Keep descriptive alt text so screen reader users know what it is.
+            ============================================================
+          -->
+          <div class="qr-frame" role="img" aria-label="Donation QR code — coming soon. In the meantime, please use the phone or email below to give.">
+            <div>
+              <strong>QR code<br>goes here</strong>
+              <p style="margin:.6rem 0 0;font-size:.85rem;">Replace with the real donation QR once the nonprofit account is confirmed.</p>
+            </div>
+          </div>
+
+          <div>
+            <h2>Scan with your phone camera</h2>
+            <p>Point your camera at the QR code to open our secure donation page. One-time gifts
+              and ongoing support are both welcome.</p>
+            <p>Prefer to give another way? Call <a href="tel:+19379014703" style="color:var(--gold-400)">937-901-4703</a>
+              or email <a href="mailto:victoryoverblindness@icloud.com" style="color:var(--gold-400)">victoryoverblindness@icloud.com</a>.
+              Checks and money orders may be mailed to the address below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why it matters -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="wrap">
+        <p class="eyebrow">Why Your Donation Matters</p>
+        <h2 id="why-title">Your generosity directly supports efforts to:</h2>
+        <div class="grid grid--2 mt-lg">
+          <article class="card">
+            <h3>Raise awareness</h3>
+            <p>Increase awareness of blindness, deafness, and disability-related challenges across
+              our communities.</p>
+          </article>
+          <article class="card">
+            <h3>Promote inclusion</h3>
+            <p>Advance accessibility and inclusion so more people can fully participate in civic,
+              economic, and social life.</p>
+          </article>
+          <article class="card">
+            <h3>Strengthen outreach</h3>
+            <p>Grow community outreach programs that connect individuals with vital resources.</p>
+          </article>
+          <article class="card">
+            <h3>Support independent living</h3>
+            <p>Back housing and independent-living initiatives that help people live with dignity
+              and independence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mailing + disclosure -->
+    <section class="section section--dark" aria-labelledby="mail-title">
+      <div class="wrap">
+        <div class="grid grid--2">
+          <div>
+            <p class="eyebrow">Mail a Gift</p>
+            <h2 id="mail-title">Checks &amp; money orders</h2>
+            <p>Blind But Not Broken<br>
+              Attn: Suley Wilson<br>
+              1721 Manor Place<br>
+              Dayton, Ohio 45406</p>
+          </div>
+          <div class="disclosure">
+            <p><strong>Tax-deductible giving.</strong> Blind But Not Broken is a fiscally
+              sponsored project of Felons With A Future, a 501(c)(3) nonprofit organization
+              (EIN&nbsp;[CONFIRM&nbsp;EIN]). Contributions are tax-deductible to the extent allowed
+              by law. A donation receipt is available on request.</p>
+            <p style="margin:0;"><a href="legal.html" style="color:var(--gold-400)">Read our full legal disclosures →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h2>Blind But Not Broken</h2>
+          <p>Empowering Lives. Building Hope. Creating Opportunity.</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul class="footer-contact">
+            <li>1721 Manor Place, Dayton, Ohio 45406</li>
+            <li>Phone: <a href="tel:+19379014703">937-901-4703</a></li>
+            <li>Email: <a href="mailto:victoryoverblindness@icloud.com">victoryoverblindness@icloud.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul class="footer-contact">
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs &amp; Services</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="legal.html">Legal &amp; Disclosures</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p><strong>Tax-deductible giving.</strong> Blind But Not Broken is a fiscally sponsored
+          project of Felons With A Future, a 501(c)(3) nonprofit organization
+          (EIN&nbsp;[CONFIRM&nbsp;EIN]). Donations are tax-deductible to the extent allowed by law.
+          See our <a href="legal.html">Legal &amp; Disclosures</a> page for details.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Blind But Not Broken</title>
+  <meta name="description" content="Get in touch with Blind But Not Broken in Dayton, Ohio. Volunteer, partner, or ask a question.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header on-dark">
+    <div class="wrap">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"><span>logo</span></span>
+          <span>Blind But Not Broken<small>Dayton, Ohio</small></span>
+        </a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span aria-hidden="true">☰</span> Menu
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero on-dark" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="eyebrow">Get In Touch</p>
+        <h1 id="contact-title">We'd love to hear from you.</h1>
+        <p class="lede">Whether you want to volunteer, partner with us, or ask a question, reach
+          out and a member of our team will follow up.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="reach-title">
+      <div class="wrap">
+        <div class="grid grid--2">
+          <!-- Details -->
+          <div>
+            <h2 id="reach-title">Reach us directly</h2>
+            <ul class="footer-contact" style="color:var(--ink);font-size:var(--step-0);">
+              <li><strong>Address</strong><br>1721 Manor Place, Dayton, Ohio 45406</li>
+              <li><strong>Phone</strong><br><a href="tel:+19379014703" style="color:var(--navy-800);font-weight:600;">937-901-4703</a></li>
+              <li><strong>Email</strong><br><a href="mailto:victoryoverblindness@icloud.com" style="color:var(--navy-800);font-weight:600;">victoryoverblindness@icloud.com</a></li>
+              <li><strong>Attn</strong><br>Suley Wilson</li>
+            </ul>
+          </div>
+
+          <!-- Form (mailto fallback — no backend required) -->
+          <div>
+            <h2>Send a message</h2>
+            <p class="hint">Fields marked with an asterisk (*) are required.</p>
+            <!--
+              This form uses a mailto action so it works with no backend / on
+              static hosting (GitHub Pages, Netlify). If you later add a form
+              handler (Netlify Forms, Formspree), change the action + method.
+            -->
+            <form action="mailto:victoryoverblindness@icloud.com" method="post" enctype="text/plain">
+              <div class="field">
+                <label for="name">Full name *</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="reason">Reason for contact</label>
+                <span class="hint" id="reason-hint">For example: volunteering, partnership, or a general question.</span>
+                <input type="text" id="reason" name="reason" aria-describedby="reason-hint">
+              </div>
+              <div class="field">
+                <label for="message">Your message *</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--onlight">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h2>Blind But Not Broken</h2>
+          <p>Empowering Lives. Building Hope. Creating Opportunity.</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul class="footer-contact">
+            <li>1721 Manor Place, Dayton, Ohio 45406</li>
+            <li>Phone: <a href="tel:+19379014703">937-901-4703</a></li>
+            <li>Email: <a href="mailto:victoryoverblindness@icloud.com">victoryoverblindness@icloud.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul class="footer-contact">
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs &amp; Services</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="legal.html">Legal &amp; Disclosures</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p><strong>Tax-deductible giving.</strong> Blind But Not Broken is a fiscally sponsored
+          project of Felons With A Future, a 501(c)(3) nonprofit organization
+          (EIN&nbsp;[CONFIRM&nbsp;EIN]). Donations are tax-deductible to the extent allowed by law.
+          See our <a href="legal.html">Legal &amp; Disclosures</a> page for details.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
