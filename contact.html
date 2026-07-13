@@ -62,12 +62,8 @@
           <div>
             <h2>Send a message</h2>
             <p class="hint">Fields marked with an asterisk (*) are required.</p>
-            <!--
-              This form uses a mailto action so it works with no backend / on
-              static hosting (GitHub Pages, Netlify). If you later add a form
-              handler (Netlify Forms, Formspree), change the action + method.
-            -->
-            <form action="mailto:info@blindbutnotbroken.org" method="post" enctype="text/plain">
+            
+            <form action="mailto:info@blindbutnotbroken.org" method="get">
               <div class="field">
                 <label for="name">Full name *</label>
                 <input type="text" id="name" name="name" autocomplete="name" required>
